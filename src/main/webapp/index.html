@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BookMyShow availability checker</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="container">
+    <div class="page-header">
+        <h1>BookMyShow Availability checker</h1>
+    </div>
+    <div class="row">
+        <form class="form-inline" action="javascript:subscribeMovie()">
+            <div class="form-group col-md-9">
+                <label class="sr-only" for="bmsUrl">BookMyShow URL</label>
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control col-md-8" id="bmsUrl"
+                           placeholder="BookMyShow URL"
+                           value="https://in.bookmyshow.com/buytickets/baahubali-2-the-conclusion-hyderabad/movie-hyd-ET00038693-MT/20170428">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </div>
+    <div class="row">
+        <h2 class="sub-header">Available Theaters</h2>
+        <table class="table" id="availableTable">
+            <thead>
+            <tr>
+                <th>#id</th>
+                <th>Name</th>
+                <th>Shows</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <div>
+            <div>
+                Total:<span id="total"></span>
+            </div>
+            <div>
+                Last Refreshed: <span id="lastRefreshed"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">@Dilip Kumar</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="lib/easyNotify.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+</body>
+</html>
