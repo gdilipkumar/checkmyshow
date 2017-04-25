@@ -36,6 +36,6 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>cms</finalName>
+        <finalName>checkmyshow</finalName>
     </build>
 </project>
